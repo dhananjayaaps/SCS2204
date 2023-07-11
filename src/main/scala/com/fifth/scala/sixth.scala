@@ -2,7 +2,9 @@ package com.fifth.scala
 
 object sixth {
 
-  def fibonacci(num: Int): Int = {
+  //make a function for print fibbancci
+
+  def fibbancci(num: Int): Int = {
     if (num == 0) {
       return 0
     }
@@ -10,14 +12,16 @@ object sixth {
       return 1
     }
     else {
-      val final = fibonacci(num - 1).toInt + fibonacci(num - 2).toInt
-      println(final)
-      return final
+      return fibbancci(num - 1) + fibbancci(num - 2)
     }
   }
 
+  //main
   def main(args: Array[String]): Unit = {
     val input = scala.io.StdIn.readLine().toInt
-    fibonacci(input)
+    for (i <- 0 to input) {
+      val result = fibbancci(i)
+      println(result)
+    }
   }
 }

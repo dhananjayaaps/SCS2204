@@ -1,4 +1,4 @@
-package com.third.scala
+package com.fifth.scala
 
 import com.fifth.scala.second.primeSeq
 
