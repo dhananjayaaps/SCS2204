@@ -1,7 +1,5 @@
 package com.fifth.scala
 
-import com.fifth.scala.second.primeSeq
-
 import scala.io.StdIn
 
 object third {

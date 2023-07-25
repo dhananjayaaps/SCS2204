@@ -2,8 +2,6 @@ package com.fifth.scala
 
 object sixth {
 
-  //make a function for print fibbancci
-
   def fibbancci(num: Int): Int = {
     if (num == 0) {
       return 0

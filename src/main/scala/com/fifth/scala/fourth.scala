@@ -1,7 +1,7 @@
 package com.fifth.scala
 
 object fourth {
-//Write a recursive function to determine even and odd numbers?
+
   def evenOdd(num: Int): String = {
     if (num == 0) {
       return "Even"
