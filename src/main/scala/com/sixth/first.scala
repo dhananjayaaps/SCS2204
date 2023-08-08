@@ -2,7 +2,7 @@ package com.sixth
 
 object first {
 
-    def encrypt(input: String, shift: Int): String = {
+    def encrypt(input: String,  shift: Int): String = {
       input.map(c => (c + shift).toChar)
     }
 
@@ -17,9 +17,8 @@ object first {
     def main(args: Array[String]): Unit = {
 
       val str = "Hello World!"
-      val shift = 3
-      val encryptedStr = cipher(str, shift, encrypt)
-      val decryptedStr = cipher(encryptedStr, shift, decrypt)
+      val encryptedStr = cipher(str,1, encrypt)
+      val decryptedStr = cipher(encryptedStr,1, decrypt)
       println(encryptedStr)
       println(decryptedStr)
 
