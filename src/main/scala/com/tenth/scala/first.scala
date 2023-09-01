@@ -12,9 +12,8 @@ object first {
   }
 
   def main(args: Array[String]): Unit = {
-    val temperatures = List(0.0, 10.0, 20.0, 30.0)
+    val temperatures = List(34.0, 36.0, 37.0)
     val averageFahrenheit = calculateAverage(temperatures)
     println(s"Average Fahrenheit temperature: $averageFahrenheit")
   }
-
 }
